@@ -8,9 +8,9 @@ DigCraft is a lightweight Minecraft-style voxel sandbox with two editions:
 ## Included files
 
 - `minecraft_game.py` — desktop voxel sandbox prototype
-- `web/index.html` — web demo entry point
-- `web/style.css` — web styling
-- `web/app.js` — Three.js voxel gameplay prototype
+- `web/index.html` — web demo entry point (desktop + mobile controls)
+- `web/style.css` — web styling (desktop + mobile)
+- `web/app.js` — Three.js voxel gameplay prototype with mobile controls
 - `requirements.txt` — Python dependencies
 
 ## Run the desktop prototype
@@ -28,9 +28,22 @@ Open `web/index.html` in a browser, or serve the folder with a static file serve
 
 Then visit `http://localhost:8000/web/`.
 
+### Mobile controls
+
+The web prototype includes a touch-friendly control scheme:
+- Left virtual joystick for movement (drag to move)
+- Right-side touch-and-drag to look around (touch-look)
+- Jump and Action buttons on the right for jump and place/break blocks
+- Tap to lock pointer on supported devices; on mobile, pointer-lock is not required
+
 ## Features
 
 - Procedural terrain generation
 - Block placement and breaking
 - First-person movement
 - Simple survival-style sandbox loop
+
+## Notes
+
+- Desktop: click to lock pointer and use mouse + keyboard.
+- Mobile: use on-screen joystick and touch-look; the UI adapts to small screens.
